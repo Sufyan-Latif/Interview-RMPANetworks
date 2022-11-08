@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Interview</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">Paid_API_Key</string>
+</resources>
