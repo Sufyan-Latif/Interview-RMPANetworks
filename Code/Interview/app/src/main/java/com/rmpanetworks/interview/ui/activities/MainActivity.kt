@@ -47,8 +47,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private var mLocationCallback: LocationCallback = object : LocationCallback() {
         override fun onLocationResult(locationResult: LocationResult) {
             val locationList = locationResult.locations
-            Log.d("onLocationResult", "called")
-            Toast.makeText(this@MainActivity, "Location Fetched", Toast.LENGTH_SHORT).show()
             if (locationList.isNotEmpty()) {
                 val location = locationList.last()
                 mLastLocation = location
